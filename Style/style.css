@@ -1,0 +1,25 @@
+/* Desktop Navigation */
+ul.desktopNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  ul.desktopNav li {
+    float: left;
+  }
+  ul.desktopNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  ul.desktopNav li a:hover {
+    background-color: #111111;
+  }
+img.navLogo{
+    display: block;
+    float: left;
+}
