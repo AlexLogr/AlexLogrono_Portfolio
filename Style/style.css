@@ -54,23 +54,18 @@ img.navLogo{
 /* Desktop Nav End */
 
 /*Home Section*/
-#home{
-  text-align: left center;
-  display: flex;
-  height: auto;
-  width: auto;
-}
-.home h2 {
-  padding-left: 30px;
-}
 .home{
   color: white;
   margin-left: 10%;
+}
+.home h2 {
+  padding-left: 30px;
 }
 /*Home End*/
 
 /* About Me Section*/
 #aboutMe {
+  height: 50%;
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
