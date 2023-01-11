@@ -1,43 +1,94 @@
+/* canceling the CSS in broswers */
 HTML, body {
   margin: 0px;
   padding: 0px;
   border: 0px;
 }
-
+body{
+  background-color: black;
+}
 /* Desktop Navigation */
 .navigationBar {
   background-color: #111111;
-  padding: 6pt;
+  padding: 15pt;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 ul.desktopNav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   }
  
-  ul.desktopNav li {
-    float: left;
+ul.desktopNav li {
+  float: left;
   }
-  ul.desktopNav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    text-decoration: none;
+ul.desktopNav li a {
+  display: block;
+  color: gray;
+  text-align: center;
+   padding: 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, white, white 50%, gray 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /*element's background extends underneath*/
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
   }
   ul.desktopNav li a:hover {
-    text-decoration: underline;
+    background-position: 0 100%;
   }
 img.navLogo{
-    float: left;
-}
-.navLogo {
+  display: flex;
+  float: left;
+  align-items: center;
   border-radius: 100%;
-  margin-right: auto;
 }
 /* Desktop Nav End */
 
+/* About Me Section*/
+#aboutMe {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: 
+    "intro intro . portrait"
+    "intro intro . portrait"
+    "skills . tools . ";
+}
+.introduction{
+  padding-right: 20%;
+  color: white;
+  grid-area: intro;
+  align-self: center;
+}
+.alexLogronoPortrait{
+  padding-right: 10%;
+  grid-area: portrait;
+  align-self: center;
+}
+.skills{
+  padding-right: 20%;
+  color: white;
+  grid-area: skills;
+  align-self: center;
+}
+.tools{
+  padding-right: 10%;
+  color: white;
+  grid-area: tools;
+  align-self: center;
+}
+/* About Me Section End */
 
 /* Desktop Footer */
 .footer{
