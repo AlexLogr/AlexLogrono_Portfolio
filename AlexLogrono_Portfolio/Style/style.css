@@ -1,0 +1,131 @@
+/* canceling the CSS in broswers */
+HTML, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body{
+  background-color: black;
+}
+/* Desktop Navigation */
+.navigationBar {
+  background-color: #111111;
+  padding: 15pt;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+ul.desktopNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+ 
+ul.desktopNav li {
+  float: left;
+  }
+ul.desktopNav li a {
+  display: block;
+  color: gray;
+  text-align: center;
+   padding: 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, white, white 50%, gray 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /*element's background extends underneath*/
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  }
+  ul.desktopNav li a:hover {
+    background-position: 0 100%;
+  }
+img.navLogo{
+  display: flex;
+  float: left;
+  align-items: center;
+  border-radius: 100%;
+}
+/* Desktop Nav End */
+
+/* About Me Section*/
+#aboutMe {
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "name portrait"
+    "intro portrait"
+    "skills tools";
+  vertical-align: text-top;
+}
+
+.name{
+  padding-right: 20%;
+  color: white;
+  grid-area: name;
+  align-self: center;
+}
+.name h2{
+  padding-left: 5%;
+}
+.introduction{
+  padding-right: 20%;
+  color: white;
+  grid-area: intro;
+  margin-bottom: 30%;
+}
+.alexLogronoPortrait{
+  padding-right: 10%;
+  grid-area: portrait;
+  margin-bottom: 30%;
+  
+}
+.skills{
+  padding-right: 20%;
+  color: white;
+  grid-area: skills;
+}
+.tools{
+  padding-right: 10%;
+  color: white;
+  grid-area: tools;
+}
+.selfPortrait{
+  height: 700px;
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+/* About Me Section End */
+
+/* Desktop Footer */
+.footer{
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  padding-left: 10%;
+  bottom: 0;
+  background-color: white;
+}
+.footer img{
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  width: 35px;
+  height: 35px;
+}
+.footer img:hover{
+  background-color: gray;
+}
+
+/* Desktop Footer End*/
