@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on(click,function () {
     $("#downloadResume").click(function (e) {
         e.preventDefault();
           
