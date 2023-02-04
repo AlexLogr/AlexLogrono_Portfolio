@@ -1,8 +1,8 @@
-$(document).on(click,function () {
-    $("#downloadResume").click(function (e) {
+$(document).ready(function () {
+    $("#download").click(function (e) {
         e.preventDefault();
           
         window.location.href 
-            = "./downloadables/resume.pdf";
+            = "File/Resume-Alexander-Logrono.pdf";
     });
 });
